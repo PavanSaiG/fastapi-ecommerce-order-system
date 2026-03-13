@@ -10,7 +10,7 @@ The system manages **Users, Products, Orders, Payments, and Notifications** whil
 
 This repository demonstrates how **real-world scalable backend services** are structured using FastAPI.
 
----
+-----
 
 # 🚀 Key Features
 
