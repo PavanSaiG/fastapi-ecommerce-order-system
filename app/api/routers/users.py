@@ -17,7 +17,7 @@ router = APIRouter(prefix="/users", tags=["Users"])
 def create_user(user: UserCreate, db: Session = Depends(get_db)):
     """
     WHY: Register new users.
-    HOW: Uses Pydantic body validation, hashes the password using passlib, and commits to DB.
+    HOW: Uses Pydantic body validation, hashes the password using passlib, and commits to Database.
     Demonstrates Sync API.
     """
     db_user = db.query(User).filter(User.email == user.email).first()
